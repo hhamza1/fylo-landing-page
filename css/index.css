@@ -1,6 +1,38 @@
-* {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 36px; }
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+ <!-- All your files in one secure location, accessible anywhere.
+
+    Fylo stores all your most important files in one secure location.
+    Access them wherever you need, share and collaborate with friends,
+    family and co-workers.
+
+    Sign up for early access
+
+    Sign Up
+
+    Privacy Policy -->
+
+*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; }
 
 .attribution {
   font-size: 11px;
@@ -8,3 +40,40 @@
 
 .attribution a {
   color: #3e52a3; }
+
+#main {
+  display: grid;
+  grid-template-areas: 'illustration signup';
+  height: 100vh; }
+
+.illustration {
+  background-image: linear-gradient(to right top, #9791f6, #0b066b);
+  width: 40vw;
+  position: relative; }
+  .illustration img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.signup {
+  float: left;
+  width: 60vw;
+  overflow: hidden;
+  margin: 0; }
+  .signup a {
+    color: #06033a; }
+    .signup a:hover {
+      color: #bbb7f9; }
+  .signup .top-nav {
+    float: left;
+    padding-top: 50px;
+    padding-left: 30px; }
+  .signup i {
+    font-size: 32px; }
+  .signup ul {
+    float: right; }
+  .signup li {
+    display: inline-block;
+    list-style: none;
+    padding: 30px 30px 0 0; }

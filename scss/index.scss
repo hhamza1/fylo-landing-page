@@ -1,4 +1,19 @@
-* {
+@import 'variables';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
 .attribution {
@@ -8,4 +23,60 @@
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+
+#main {
+  display: grid;
+  grid-template-areas: 'illustration signup';
+  height: 100vh;
+}
+
+.illustration {
+  background-image: linear-gradient(to right top, darken($primary_blue, 8), lighten($secondary_blue, 10));
+  width: 40vw;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.signup {
+  float: left;
+  width: 60vw;
+  overflow: hidden;
+  margin: 0;
+
+  a {
+    color: $secondary_blue;
+
+    &:hover {
+      color: $primary_blue;
+    }
+  }
+
+
+  .top-nav {
+    float: left;
+    padding-top: 50px;
+    padding-left: 30px;
+  }
+
+  i {
+    font-size: 32px;
+  }
+
+  ul {
+    float: right;
+  }
+
+  li {
+    display: inline-block;
+    list-style: none;
+    padding: 30px 30px 0 0;
+  }
 }
