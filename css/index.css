@@ -9,9 +9,7 @@ The designs were created to the following widths:
 
  <!-- All your files in one secure location, accessible anywhere.
 
-    Fylo stores all your most important files in one secure location.
-    Access them wherever you need, share and collaborate with friends,
-    family and co-workers.
+    
 
     Sign up for early access
 
@@ -33,6 +31,10 @@ h5,
 h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 700; }
+
+p {
+  color: #7f7f7f;
+  padding-bottom: 30px; }
 
 .attribution {
   font-size: 11px;
@@ -56,24 +58,51 @@ h6 {
     left: 50%;
     transform: translate(-50%, -50%); }
 
-.signup {
+.signup .nav-section a {
+  color: #06033a; }
+
+.signup .nav-section:hover {
+  color: #bbb7f9; }
+
+.signup .top-nav {
   float: left;
-  width: 60vw;
-  overflow: hidden;
-  margin: 0; }
-  .signup a {
-    color: #06033a; }
-    .signup a:hover {
-      color: #bbb7f9; }
-  .signup .top-nav {
-    float: left;
-    padding-top: 50px;
-    padding-left: 30px; }
-  .signup i {
-    font-size: 32px; }
-  .signup ul {
-    float: right; }
-  .signup li {
+  padding-top: 50px;
+  padding-left: 50px; }
+
+.signup i {
+  font-size: 32px; }
+
+.signup .social {
+  float: right; }
+  .signup .social li {
     display: inline-block;
     list-style: none;
     padding: 30px 30px 0 0; }
+    .signup .social li:last-child {
+      padding-right: 50px; }
+
+.signup .content {
+  display: inline-block;
+  padding: 50px 50px 50px 50px; }
+
+input {
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  outline: none;
+  width: 300px;
+  height: 50px;
+  padding: 10px 10px;
+  box-shadow: 4px 6px 8px 0px rgba(127, 127, 127, 0.4);
+  margin: 0 20px 0 0;
+  font-size: 1.25rem; }
+
+.btn {
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 3px;
+  color: #fff;
+  background: #05d69b;
+  padding: 15px 50px;
+  box-shadow: 4px 6px 8px 0px rgba(127, 127, 127, 0.4); }

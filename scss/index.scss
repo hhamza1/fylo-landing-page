@@ -16,6 +16,11 @@ h6 {
   font-weight: 700;
 }
 
+p {
+  color: $neutral_color;
+  padding-bottom: 30px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -46,13 +51,13 @@ h6 {
 }
 
 .signup {
-  float: left;
-  width: 60vw;
-  overflow: hidden;
-  margin: 0;
 
-  a {
-    color: $secondary_blue;
+  .nav-section {
+
+
+    a {
+      color: $secondary_blue;
+    }
 
     &:hover {
       color: $primary_blue;
@@ -63,20 +68,58 @@ h6 {
   .top-nav {
     float: left;
     padding-top: 50px;
-    padding-left: 30px;
+    padding-left: 50px;
   }
 
   i {
     font-size: 32px;
   }
 
-  ul {
+  .social {
+
     float: right;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 30px 30px 0 0;
+
+      &:last-child {
+        padding-right: 50px;
+      }
+    }
+
   }
 
-  li {
+  .content {
     display: inline-block;
-    list-style: none;
-    padding: 30px 30px 0 0;
+    padding: 50px 50px 50px 50px;
   }
+
+}
+
+
+input {
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  outline: none;
+  width: 300px;
+  height: 50px;
+  padding: 10px 10px;
+  box-shadow: 4px 6px 8px 0px rgba($neutral-color, 0.4);
+  margin: 0 20px 0 0;
+  font-size: 1.25rem;
+}
+
+
+.btn {
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 3px;
+  color: #fff;
+  background: $green_accent;
+  padding: 15px 50px;
+  box-shadow: 4px 6px 8px 0px rgba($neutral-color, 0.4);
 }
