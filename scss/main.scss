@@ -122,4 +122,9 @@ input {
   background: $green_accent;
   padding: 15px 50px;
   box-shadow: 4px 6px 8px 0px rgba($neutral-color, 0.4);
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:active {
+    box-shadow: 0px 0px 0px 0px rgba(#fff, 0.4);
+  }
 }
